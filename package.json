@@ -1,0 +1,43 @@
+{
+  "name": "sample-ts-lit-library",
+  "source": "src/index.ts",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./react": "./dist/react/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "wds --watch",
+    "serve:prod": "MODE=prod npm run serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "lit": "^2.7.6"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@custom-elements-manifest/analyzer": "^0.6.3",
+    "@lit-labs/react": "^1.2.1",
+    "@open-wc/testing": "^3.1.5",
+    "@types/react": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "@web/dev-server": "^0.1.31",
+    "@web/dev-server-legacy": "^1.0.0",
+    "@web/test-runner": "^0.15.0",
+    "@web/test-runner-playwright": "^0.9.0",
+    "@webcomponents/webcomponentsjs": "^2.6.0",
+    "eslint": "^8.15.0",
+    "lit-analyzer": "^1.2.1",
+    "react": "^18.2.0",
+    "typescript": "~4.7.4"
+  },
+  "customElements": "customElements.json"
+}
